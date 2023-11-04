@@ -2,6 +2,11 @@ import numpy as np
 import sys
 
 
+def main():
+    check_num(y, x, n)
+    solution()
+
+
 sudoku_grid = [
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -49,3 +54,6 @@ def solution():
 
 
 solution()
+
+if __name__ == "__main__":
+    main()
