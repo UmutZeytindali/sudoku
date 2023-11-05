@@ -3,7 +3,6 @@ import sys
 
 
 def main():
-    check_num(y, x, n)
     solution()
 
 
@@ -53,7 +52,6 @@ def solution():
     sys.exit("")
 
 
-solution()
 
 if __name__ == "__main__":
     main()
