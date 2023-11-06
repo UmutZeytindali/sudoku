@@ -40,11 +40,12 @@ def solution():
                 for n in range(1, 10):
                     if check_num(y, x, n):
                         grid[y][x] = n
+                        print("im loopin 'ere")
                         solution()
                         grid[y][x] = 0
                 return grid
     print(np.matrix(grid))
-    sys.exit("")
+    return grid
 
 
 solution()

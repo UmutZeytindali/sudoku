@@ -1,20 +1,10 @@
 import pygame as pg
 import numpy as np
 import sys
+from sudoku import check_nums, solution
+
 
 pg.init()
-
-grid = [
-    [1, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-    [0, 0, 0, 0, 0, 0, 0, 0, 0],
-]
 
 # misc. vars
 screen = pg.display.set_mode((750, 750))
@@ -68,8 +58,7 @@ def game_loop():
     for event in pg.event.get():
         if event.type == pg.QUIT:
             pg.quit()
-            exit()
-
+            sys.exit("")
     pg.display.update()
     clock.tick(60)
     draw_background()
